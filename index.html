@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
 <meta charset="UTF-8">
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
 
 <title>TOEFL Listening</title>
 
@@ -28,11 +30,15 @@ body {
 }
 
 
+/* =========================
+   HEADER
+========================= */
+
 .header {
 
     background: linear-gradient(135deg, #123746, #1d6170);
 
-    padding: 35px 20px;
+    padding: 30px 20px;
 
     text-align: center;
 
@@ -42,7 +48,6 @@ body {
 
 }
 
-
 .header h1 {
 
     margin: 0;
@@ -50,7 +55,6 @@ body {
     font-size: 34px;
 
 }
-
 
 .header p {
 
@@ -63,16 +67,24 @@ body {
 }
 
 
+/* =========================
+   CONTAINER
+========================= */
+
 .container {
 
     max-width: 700px;
 
     margin: auto;
 
-    padding: 25px 15px 60px;
+    padding: 20px 15px 60px;
 
 }
 
+
+/* =========================
+   SECTION TITLE
+========================= */
 
 .section-title {
 
@@ -80,10 +92,14 @@ body {
 
     font-weight: bold;
 
-    margin: 25px 5px 20px;
+    margin: 20px 5px;
 
 }
 
+
+/* =========================
+   LESSON
+========================= */
 
 .lesson {
 
@@ -93,9 +109,9 @@ body {
 
     border-radius: 25px;
 
-    padding: 18px;
+    padding: 15px;
 
-    margin-bottom: 35px;
+    margin-bottom: 30px;
 
     box-shadow: 0 8px 25px rgba(0,0,0,.3);
 
@@ -108,10 +124,14 @@ body {
 
     font-weight: bold;
 
-    margin-bottom: 18px;
+    margin-bottom: 15px;
 
 }
 
+
+/* =========================
+   VIDEO
+========================= */
 
 .video {
 
@@ -126,26 +146,34 @@ body {
 }
 
 
+/* =========================
+   FILE TITLE
+========================= */
+
 .file-title {
 
     background: #214e5d;
 
     color: white;
 
-    font-size: 23px;
+    font-size: 21px;
 
     font-weight: bold;
 
-    padding: 18px;
+    padding: 14px;
 
-    margin-top: 25px;
+    margin-top: 18px;
 
-    border-radius: 18px 18px 0 0;
+    border-radius: 16px 16px 0 0;
 
     text-align: center;
 
 }
 
+
+/* =========================
+   FILE FRAME
+========================= */
 
 .file-frame {
 
@@ -160,35 +188,48 @@ body {
 }
 
 
-/*
-PDF
-*/
+/* =========================
+   PDF
+   حوالي ثلث الشاشة
+========================= */
 
 .pdf-frame {
 
-    height: 750px;
+    height: 34vh;
 
-    border-radius: 0 0 18px 18px;
+    min-height: 220px;
+
+    max-height: 320px;
+
+    border-radius: 0 0 16px 16px;
+
+    overflow: auto;
 
 }
 
 
-/*
-Explanation
-*/
+/* =========================
+   EXPLANATION
+========================= */
 
 .explanation-frame {
 
-    height: 1000px;
+    height: 34vh;
 
-    border-radius: 0 0 18px 18px;
+    min-height: 220px;
+
+    max-height: 320px;
+
+    border-radius: 0 0 16px 16px;
+
+    overflow: auto;
 
 }
 
 
-/*
-Resources
-*/
+/* =========================
+   RESOURCES
+========================= */
 
 .resources {
 
@@ -198,23 +239,27 @@ Resources
 
     border-radius: 25px;
 
-    padding: 20px;
+    padding: 15px;
 
-    margin-top: 30px;
+    margin-top: 25px;
 
 }
 
 
 .resource-title {
 
-    font-size: 24px;
+    font-size: 23px;
 
     font-weight: bold;
 
-    margin-bottom: 15px;
+    margin-bottom: 12px;
 
 }
 
+
+/* =========================
+   FOOTER
+========================= */
 
 .footer {
 
@@ -222,7 +267,7 @@ Resources
 
     opacity: .6;
 
-    margin-top: 40px;
+    margin-top: 35px;
 
     font-size: 14px;
 
@@ -237,7 +282,9 @@ Resources
 <body>
 
 
-<!-- HEADER -->
+<!-- =========================
+     HEADER
+========================= -->
 
 <div class="header">
 
@@ -292,7 +339,9 @@ Resources
 
 
 
-    <!-- TOEFL BOOK -->
+    <!-- =========================
+         TOEFL BOOK
+    ========================= -->
 
     <div class="file-title">
 
@@ -303,15 +352,19 @@ Resources
 
     <iframe
 
+        id="pdf1"
+
         class="file-frame pdf-frame"
 
-        src="TOEFLBook2.pdf">
+        loading="lazy">
 
     </iframe>
 
 
 
-    <!-- EXPLANATION -->
+    <!-- =========================
+         EXPLANATION
+    ========================= -->
 
     <div class="file-title">
 
@@ -324,7 +377,9 @@ Resources
 
         class="file-frame explanation-frame"
 
-        src="listen1Ex.html">
+        src="listen1Ex.html"
+
+        loading="lazy">
 
     </iframe>
 
@@ -351,12 +406,17 @@ Resources
     <!-- VIDEO -->
 
     <video
+
         class="video"
+
         controls
+
         preload="metadata">
 
         <source
+
             src="listen2.mp4"
+
             type="video/mp4">
 
         Your browser does not support video playback.
@@ -365,7 +425,9 @@ Resources
 
 
 
-    <!-- TOEFL BOOK -->
+    <!-- =========================
+         TOEFL BOOK
+    ========================= -->
 
     <div class="file-title">
 
@@ -376,15 +438,19 @@ Resources
 
     <iframe
 
+        id="pdf2"
+
         class="file-frame pdf-frame"
 
-        src="TOEFLBook2.pdf">
+        loading="lazy">
 
     </iframe>
 
 
 
-    <!-- EXPLANATION -->
+    <!-- =========================
+         EXPLANATION
+    ========================= -->
 
     <div class="file-title">
 
@@ -397,7 +463,9 @@ Resources
 
         class="file-frame explanation-frame"
 
-        src="listen2Ex.html">
+        src="listen2Ex.html"
+
+        loading="lazy">
 
     </iframe>
 
@@ -429,15 +497,19 @@ Resources
 
     <iframe
 
+        id="pdf3"
+
         class="file-frame pdf-frame"
 
-        src="TOEFLBook2.pdf">
+        loading="lazy">
 
     </iframe>
 
 
 
-    <div class="resource-title" style="margin-top:30px;">
+    <div
+        class="resource-title"
+        style="margin-top:25px;">
 
         📄 TOEFL Book 2 Explanation
 
@@ -448,7 +520,9 @@ Resources
 
         class="file-frame explanation-frame"
 
-        src="TOEFLBEx.html">
+        src="TOEFLBEx.html"
+
+        loading="lazy">
 
     </iframe>
 
@@ -465,6 +539,44 @@ Resources
 
 
 </div>
+
+
+
+<!-- ================================================= -->
+<!-- PDF VIEWER
+================================================= -->
+
+<script>
+
+const pdfFile = "TOEFLBook2.pdf";
+
+const pdfViewer =
+"https://mozilla.github.io/pdf.js/web/viewer.html?file="
++
+encodeURIComponent(
+    window.location.href.substring(
+        0,
+        window.location.href.lastIndexOf("/") + 1
+    )
+    + pdfFile
+);
+
+
+/* PDF 1 */
+
+document.getElementById("pdf1").src = pdfViewer;
+
+
+/* PDF 2 */
+
+document.getElementById("pdf2").src = pdfViewer;
+
+
+/* PDF 3 */
+
+document.getElementById("pdf3").src = pdfViewer;
+
+</script>
 
 
 </body>
