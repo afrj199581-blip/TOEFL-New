@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>TOEFL</title>
+<title>TOEFL Listening</title>
+
 
 <style>
 
@@ -13,101 +16,228 @@
 }
 
 body {
+
     margin: 0;
+
     font-family: Arial, sans-serif;
+
     background: #0d1720;
+
     color: white;
+
 }
+
 
 .header {
+
     background: linear-gradient(135deg, #123746, #1d6170);
-    padding: 30px 20px;
+
+    padding: 35px 20px;
+
     text-align: center;
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
+
+    border-bottom-left-radius: 35px;
+
+    border-bottom-right-radius: 35px;
+
 }
+
 
 .header h1 {
+
     margin: 0;
+
     font-size: 34px;
+
 }
+
 
 .header p {
-    margin-top: 8px;
-    font-size: 16px;
-    opacity: 0.9;
+
+    margin-top: 10px;
+
+    font-size: 18px;
+
+    opacity: .9;
+
 }
+
 
 .container {
-    max-width: 650px;
+
+    max-width: 700px;
+
     margin: auto;
-    padding: 25px 15px 50px;
+
+    padding: 25px 15px 60px;
+
 }
+
 
 .section-title {
-    font-size: 25px;
-    margin: 25px 5px 15px;
+
+    font-size: 28px;
+
     font-weight: bold;
+
+    margin: 25px 5px 20px;
+
 }
 
-.card {
-    background: #ffffff;
-    color: #16232b;
-    border-radius: 18px;
-    margin-bottom: 15px;
+
+.lesson {
+
+    background: white;
+
+    color: #17232b;
+
+    border-radius: 25px;
+
     padding: 18px;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+
+    margin-bottom: 35px;
+
+    box-shadow: 0 8px 25px rgba(0,0,0,.3);
+
 }
 
-.card h2 {
-    margin: 0 0 15px;
-    font-size: 22px;
-}
 
-.button {
-    display: block;
-    text-decoration: none;
-    color: white;
-    background: #176b87;
-    padding: 15px;
-    margin-top: 10px;
-    border-radius: 12px;
-    text-align: center;
-    font-size: 17px;
+.lesson-title {
+
+    font-size: 27px;
+
     font-weight: bold;
-    transition: 0.2s;
+
+    margin-bottom: 18px;
+
 }
 
-.button:hover {
-    transform: scale(1.02);
-    background: #0e526a;
-}
 
-.video-box {
-    margin-top: 12px;
-}
+.video {
 
-video {
     width: 100%;
-    border-radius: 12px;
+
+    border-radius: 18px;
+
     background: black;
+
+    display: block;
+
 }
 
-.resources .button {
-    background: #344e5c;
+
+.file-title {
+
+    background: #214e5d;
+
+    color: white;
+
+    font-size: 23px;
+
+    font-weight: bold;
+
+    padding: 18px;
+
+    margin-top: 25px;
+
+    border-radius: 18px 18px 0 0;
+
+    text-align: center;
+
 }
+
+
+.file-frame {
+
+    width: 100%;
+
+    border: none;
+
+    display: block;
+
+    background: white;
+
+}
+
+
+/*
+PDF
+*/
+
+.pdf-frame {
+
+    height: 750px;
+
+    border-radius: 0 0 18px 18px;
+
+}
+
+
+/*
+Explanation
+*/
+
+.explanation-frame {
+
+    height: 1000px;
+
+    border-radius: 0 0 18px 18px;
+
+}
+
+
+/*
+Resources
+*/
+
+.resources {
+
+    background: white;
+
+    color: #17232b;
+
+    border-radius: 25px;
+
+    padding: 20px;
+
+    margin-top: 30px;
+
+}
+
+
+.resource-title {
+
+    font-size: 24px;
+
+    font-weight: bold;
+
+    margin-bottom: 15px;
+
+}
+
 
 .footer {
+
     text-align: center;
-    opacity: 0.6;
+
+    opacity: .6;
+
+    margin-top: 40px;
+
     font-size: 14px;
-    margin-top: 30px;
+
 }
 
+
 </style>
+
 </head>
 
+
 <body>
+
+
+<!-- HEADER -->
 
 <div class="header">
 
@@ -118,115 +248,225 @@ video {
 </div>
 
 
+
 <div class="container">
 
 
-    <!-- ========================= -->
-    <!-- LISTENING SECTION -->
-    <!-- ========================= -->
+<div class="section-title">
 
-    <div class="section-title">
-        🎧 Listening
-    </div>
-
-
-    <!-- LISTENING 1 -->
-
-    <div class="card">
-
-        <h2>🎧 Listening 1</h2>
-
-        <div class="video-box">
-
-            <video controls preload="metadata">
-
-                <source src="listen1.mp4" type="video/mp4">
-
-                Your browser does not support video playback.
-
-            </video>
-
-        </div>
-
-
-        <a class="button" href="TOEFLBook2.pdf" target="_blank">
-            📕 TOEFL Book 2
-        </a>
-
-
-        <a class="button" href="listen1Ex.html" target="_blank">
-            📄 Listening 1 Explanation
-        </a>
-
-    </div>
-
-
-
-    <!-- LISTENING 2 -->
-
-    <div class="card">
-
-        <h2>🎧 Listening 2</h2>
-
-        <div class="video-box">
-
-            <video controls preload="metadata">
-
-                <source src="listen2.mp4" type="video/mp4">
-
-                Your browser does not support video playback.
-
-            </video>
-
-        </div>
-
-
-        <a class="button" href="TOEFLBook2.pdf" target="_blank">
-            📕 TOEFL Book 2
-        </a>
-
-
-        <a class="button" href="listen2Ex.html" target="_blank">
-            📄 Listening 2 Explanation
-        </a>
-
-    </div>
-
-
-
-    <!-- ========================= -->
-    <!-- RESOURCES -->
-    <!-- ========================= -->
-
-    <div class="section-title">
-        📚 Resources
-    </div>
-
-
-    <div class="card resources">
-
-        <h2>📚 General Resources</h2>
-
-
-        <a class="button" href="TOEFLBook2.pdf" target="_blank">
-            📕 TOEFL Book 2
-        </a>
-
-
-        <a class="button" href="TOEFLBEx.html" target="_blank">
-            📄 TOEFL Book 2 Explanation
-        </a>
-
-    </div>
-
-
-    <div class="footer">
-
-        TOEFL Practice • Pharmacy D
-
-    </div>
+    🎧 Listening
 
 </div>
 
+
+
+<!-- ================================================= -->
+<!-- LISTENING 1 -->
+<!-- ================================================= -->
+
+<div class="lesson">
+
+
+    <div class="lesson-title">
+
+        🎧 Listening 1
+
+    </div>
+
+
+
+    <!-- VIDEO -->
+
+    <video
+        class="video"
+        controls
+        preload="metadata">
+
+        <source
+            src="listen1.mp4"
+            type="video/mp4">
+
+        Your browser does not support video playback.
+
+    </video>
+
+
+
+    <!-- TOEFL BOOK -->
+
+    <div class="file-title">
+
+        📕 TOEFL Book 2
+
+    </div>
+
+
+    <iframe
+
+        class="file-frame pdf-frame"
+
+        src="TOEFLBook2.pdf">
+
+    </iframe>
+
+
+
+    <!-- EXPLANATION -->
+
+    <div class="file-title">
+
+        📄 Listening 1 Explanation
+
+    </div>
+
+
+    <iframe
+
+        class="file-frame explanation-frame"
+
+        src="listen1Ex.html">
+
+    </iframe>
+
+
+</div>
+
+
+
+<!-- ================================================= -->
+<!-- LISTENING 2 -->
+<!-- ================================================= -->
+
+<div class="lesson">
+
+
+    <div class="lesson-title">
+
+        🎧 Listening 2
+
+    </div>
+
+
+
+    <!-- VIDEO -->
+
+    <video
+        class="video"
+        controls
+        preload="metadata">
+
+        <source
+            src="listen2.mp4"
+            type="video/mp4">
+
+        Your browser does not support video playback.
+
+    </video>
+
+
+
+    <!-- TOEFL BOOK -->
+
+    <div class="file-title">
+
+        📕 TOEFL Book 2
+
+    </div>
+
+
+    <iframe
+
+        class="file-frame pdf-frame"
+
+        src="TOEFLBook2.pdf">
+
+    </iframe>
+
+
+
+    <!-- EXPLANATION -->
+
+    <div class="file-title">
+
+        📄 Listening 2 Explanation
+
+    </div>
+
+
+    <iframe
+
+        class="file-frame explanation-frame"
+
+        src="listen2Ex.html">
+
+    </iframe>
+
+
+</div>
+
+
+
+<!-- ================================================= -->
+<!-- GENERAL RESOURCES -->
+<!-- ================================================= -->
+
+<div class="section-title">
+
+    📚 Resources
+
+</div>
+
+
+<div class="resources">
+
+
+    <div class="resource-title">
+
+        📕 TOEFL Book 2
+
+    </div>
+
+
+    <iframe
+
+        class="file-frame pdf-frame"
+
+        src="TOEFLBook2.pdf">
+
+    </iframe>
+
+
+
+    <div class="resource-title" style="margin-top:30px;">
+
+        📄 TOEFL Book 2 Explanation
+
+    </div>
+
+
+    <iframe
+
+        class="file-frame explanation-frame"
+
+        src="TOEFLBEx.html">
+
+    </iframe>
+
+
+</div>
+
+
+
+<div class="footer">
+
+    TOEFL Practice • Pharmacy D
+
+</div>
+
+
+</div>
+
+
 </body>
+
 </html>
